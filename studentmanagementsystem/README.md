@@ -1,10 +1,17 @@
-# Student Management Domain
-## The project includes:
-- the domain models.
-- database layer, which defines interface through which the domain models can be
+# Student Management Application
+
+## The domain includes:
+- The domain models.
+- Database layer, which defines interface through which the domain models can be
 persisted in a data structure, file/s, or a real database.
 - CRUD (create, read, update, delete) functionality in the form of repositories.
-## Core business logc functionality needed for the Student Management app
+
+## The CLI:
+- Handles user interaction via the command line interface.
+- It serves as a presentation layer for the application, which means that no data is handled in the command processor itself.
+- Implements services, which define the business logic in the application, which interacts with the Domain layer for persiting the data.
+
+## Core business logic functionality of the Student Management Application
 - add a new course.
 - add a new student.
 - add a new teacher.
@@ -16,13 +23,17 @@ persisted in a data structure, file/s, or a real database.
 - show all courses and their teachers and students (without grades).
 - show the average grade for all students in a specific course.
 - show a total average grade for student (between all of his courses).
+
 ## Actors
+
 ### Teacher
 - name
 - degree (MSc, BSc, PHD)
+
 ### Student
 - name
 - age
-- Course    
+
+### Course    
 - name
 - total hours
